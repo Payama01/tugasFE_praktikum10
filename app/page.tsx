@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from './page.module.css';
 
 export default function Home() {
@@ -38,27 +39,45 @@ export default function Home() {
       <section id="services" className={styles.section}>
         <h2 className={styles.sectionTitle}>Layanan yang Kami Tawarkan</h2>
         <div className={styles.servicesGrid}>
-          <div className={styles.serviceCard}>
-            <h3>Pengembangan Website</h3>
-            <p>
-              Kami membangun website yang cepat, aman, dan responsif
-              menggunakan teknologi terbaru seperti Next.js.
-            </p>
-          </div>
-          <div className={styles.serviceCard}>
-            <h3>Desain UI/UX</h3>
-            <p>
-              Tim desainer kami akan merancang antarmuka yang indah secara
-              visual dan juga intuitif untuk digunakan.
-            </p>
-          </div>
-          <div className={styles.serviceCard}>
-            <h3>Aplikasi Mobile</h3>
-            <p>
-              Kami membuat aplikasi cross-platform untuk iOS dan Android yang
-              dapat meningkatkan jangkauan bisnis Anda.
-            </p>
-          </div>
+          <Link
+            href="/layanan/pengembangan-website"
+            className={styles.serviceCardLink} 
+          >
+            <div className={styles.serviceCard}>
+              <h3>Pengembangan Website</h3>
+              <p>
+                Kami membangun website yang cepat, aman, dan responsif
+                menggunakan teknologi terbaru seperti Next.js.
+              </p>
+            </div>
+          </Link>
+
+          <Link
+            href="/layanan/desain-ui-ux"
+            className={styles.serviceCardLink} 
+          >
+            <div className={styles.serviceCard}>
+              <h3>Desain UI/UX</h3>
+              <p>
+                Tim desainer kami akan merancang antarmuka yang indah secara
+                visual dan juga intuitif untuk digunakan.
+              </p>
+            </div>
+          </Link>
+
+          <Link
+            href="/layanan/aplikasi-mobile"
+            className={styles.serviceCardLink} 
+          >
+            <div className={styles.serviceCard}>
+              <h3>Aplikasi Mobile</h3>
+              <p>
+                Kami membuat aplikasi cross-platform untuk iOS dan Android yang
+                dapat meningkatkan jangkauan bisnis Anda.
+              </p>
+            </div>
+          </Link>
+
         </div>
       </section>
 

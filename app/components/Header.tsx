@@ -9,7 +9,7 @@ export default function Header() {
           PT. Payama Digital Solusi
         </Link>
         <nav className={styles.nav}>
-          <a href="#about">Tentang Kami</a>
+          <a href="/tentang">Tentang Kami</a>
           <a href="#services">Layanan</a>
           <a href="#contact">Kontak</a>
         </nav>

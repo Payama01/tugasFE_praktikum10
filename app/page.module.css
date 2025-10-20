@@ -106,3 +106,12 @@
 .contactSection .textContainer {
   text-align: center;
 }
+
+.serviceCardLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.serviceCardLink:hover {
+  text-decoration: none;
+}
