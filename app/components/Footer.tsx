@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <p>
-        © 2025 {`payama01`}. Hak Cipta Dilindungi.
+        © 2025 PT. Payama Digital Solusi. Hak Cipta Dilindungi.
       </p>
     </footer>
   );

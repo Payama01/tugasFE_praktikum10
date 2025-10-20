@@ -22,14 +22,16 @@ export default function Home() {
 
       {/* 2. TENTANG KAMI */}
       <section id="about" className={styles.section}>
-        <h2 className={styles.sectionTitle}>Tentang Kami</h2>
-        <p>
-          Didirikan pada tahun 2024, PT. Payama Digital Solusi adalah sebuah agensi
-          digital yang bersemangat dalam memecahkan masalah. Misi kami adalah
-          memberdayakan bisnis, baik besar maupun kecil, untuk sukses di dunia
-          online dengan menyediakan solusi teknologi yang efektif dan mudah
-          digunakan.
-        </p>
+        <div className={styles.textContainer}>
+          <h2 className={styles.sectionTitle}>Tentang Kami</h2>
+          <p>
+            Didirikan pada tahun 2024, PT. Payama Digital Solusi adalah sebuah
+            agensi digital yang bersemangat dalam memecahkan masalah. Misi kami
+            adalah memberdayakan bisnis, baik besar maupun kecil, untuk sukses di
+            dunia online dengan menyediakan solusi teknologi yang efektif dan
+            mudah digunakan.
+          </p>
+        </div>
       </section>
 
       {/* 3. LAYANAN KAMI */}
@@ -61,12 +63,17 @@ export default function Home() {
       </section>
 
       {/* 4. HUBUNGI KAMI */}
-      <section id="contact" className={styles.section}>
-        <h2 className={styles.sectionTitle}>Tertarik Bekerja Sama?</h2>
-        <p>
-          Kami siap mendiskusikan proyek Anda berikutnya. Hubungi kami melalui
-          email di <strong>halo@PayamaDigitalSolusi.com</strong>.
-        </p>
+      <section
+        id="contact"
+        className={`${styles.section} ${styles.contactSection}`}
+      >
+        <div className={styles.textContainer}> 
+          <h2 className={styles.sectionTitle}>Tertarik Bekerja Sama?</h2>
+          <p>
+            Kami siap mendiskusikan proyek Anda berikutnya. Hubungi kami melalui
+            email di <strong>halo@PayamaDigitalSolusi.com</strong>.
+          </p>
+        </div> 
       </section>
     </main>
   );

@@ -1,21 +1,28 @@
-/* Kontainer Utama */
 .main {
   width: 100%;
   max-width: 1100px;
-  margin: 0 auto; /* Tengah */
+  margin: 0 auto;
   padding: 0 2rem;
   box-sizing: border-box;
 }
 
-/* Base untuk semua section */
 .section {
-  padding: 4rem 0;
+  padding: 5rem 0; 
   border-bottom: 1px solid #eaeaea;
 }
 
 .sectionTitle {
   font-size: 2.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem; 
+  text-align: center;
+}
+
+.textContainer {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left; 
+}
+.textContainer .sectionTitle {
   text-align: center;
 }
 
@@ -27,6 +34,7 @@
   text-align: center;
   min-height: 60vh;
   padding: 4rem 0;
+  border-bottom: 1px solid #eaeaea;
 }
 
 .heroContent {
@@ -74,14 +82,27 @@
   border: 1px solid #eaeaea;
   border-radius: 10px;
   padding: 2rem;
-  transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s, transform 0.2s;
+  background-color: #fff;
 }
 
 .serviceCard:hover {
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transform: translateY(-5px); 
 }
 
 .serviceCard h3 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
+  color: #0070f3; 
+}
+
+/* 4. Contact Section */
+.contactSection {
+  background-color: #fafafa;
+  border-bottom: none; 
+}
+
+.contactSection .textContainer {
+  text-align: center;
 }
